@@ -6,11 +6,10 @@ import { Button } from "@/components/ui/button";
 import { DONATE, INSTALLER } from "@/lib/links";
 
 const NAV = [
-  { href: "#product", label: "Product" },
-  { href: "#youtube", label: "YouTube MP3" },
-  { href: "#features", label: "Features" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#terms", label: "Terms" },
+  { href: "/#product", label: "Product" },
+  { href: "/#youtube", label: "YouTube MP3" },
+  { href: "/#features", label: "Features" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function SiteHeader() {
@@ -26,7 +25,7 @@ export function SiteHeader() {
             shineColor={["#ffffff", "#8a8a8a", "#ffffff"]}
           />
           <div className="relative flex h-12 items-center justify-between gap-3 px-2 pr-2 pl-4">
-            <a href="#top" className="flex shrink-0 items-center gap-2 text-sm font-semibold tracking-tight">
+            <a href="/" className="flex shrink-0 items-center gap-2 text-sm font-semibold tracking-tight">
               <BrandMark className="size-5" />
               Cueboard
             </a>

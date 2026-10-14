@@ -17,4 +17,17 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
   },
+  preview: {
+    port: 5173,
+    strictPort: true,
+  },
+  appType: "spa",
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(root, "index.html"),
+        terms: path.resolve(root, "terms.html"),
+      },
+    },
+  },
 });

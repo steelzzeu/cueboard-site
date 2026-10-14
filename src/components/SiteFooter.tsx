@@ -1,14 +1,14 @@
 import { BrandMark } from "@/components/BrandMark";
 import { Separator } from "@/components/ui/separator";
-import { DONATE, INSTALLER, PORTABLE } from "@/lib/links";
+import { DONATE, INSTALLER, PORTABLE, TERMS } from "@/lib/links";
 
 const COLUMNS = [
   {
     title: "Product",
     links: [
-      { href: "#product", label: "Overview" },
-      { href: "#youtube", label: "YouTube MP3" },
-      { href: "#features", label: "Features" },
+      { href: "/#product", label: "Overview" },
+      { href: "/#youtube", label: "YouTube MP3" },
+      { href: "/#features", label: "Features" },
     ],
   },
   {
@@ -21,8 +21,8 @@ const COLUMNS = [
   {
     title: "Support",
     links: [
-      { href: "#faq", label: "FAQ" },
-      { href: "#terms", label: "Terms" },
+      { href: "/#faq", label: "FAQ" },
+      { href: TERMS, label: "Terms" },
       { href: DONATE, label: "Donate", external: true },
     ],
   },
@@ -35,10 +35,10 @@ export function SiteFooter() {
         <Separator className="mb-10" />
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="flex items-center gap-2 text-sm font-semibold">
+            <a href="/" className="flex items-center gap-2 text-sm font-semibold">
               <BrandMark className="size-5" />
               Cueboard
-            </p>
+            </a>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
               A Windows soundboard for streamers. Local files, global hotkeys, no account.
             </p>

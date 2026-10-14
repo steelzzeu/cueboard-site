@@ -1,11 +1,13 @@
+import type { ReactNode } from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { TERMS } from "@/lib/links";
 
-const FAQ = [
+const FAQ: { q: string; a: ReactNode }[] = [
   {
     q: "How does the YouTube to MP3 converter work?",
     a: "Paste a YouTube, Shorts, or youtu.be link. Cueboard fetches audio only, converts it to MP3 on this PC, and adds the clip to your board. Nothing is uploaded. Clips longer than ten minutes are rejected.",
@@ -32,7 +34,15 @@ const FAQ = [
   },
   {
     q: "What am I agreeing to when I install?",
-    a: "The Windows installer shows the Cueboard terms of use. You must accept them to continue. They cover local files, YouTube conversion responsibility, audio routing, and a no-warranty clause. The same terms are on this page.",
+    a: (
+      <>
+        The Windows installer shows the Cueboard terms of use. You must accept them to continue. They cover local files, YouTube conversion responsibility, audio routing, and a no-warranty clause. Read the{" "}
+        <a className="underline underline-offset-4 hover:text-foreground" href={TERMS}>
+          terms page
+        </a>
+        .
+      </>
+    ),
   },
 ];
 
