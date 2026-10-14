@@ -1,6 +1,6 @@
 import { BrandMark } from "@/components/BrandMark";
 import { Separator } from "@/components/ui/separator";
-import { DONATE, INSTALLER, PORTABLE, TERMS } from "@/lib/links";
+import { DONATE, INSTALLER, PORTABLE, STEELZZ, TERMS } from "@/lib/links";
 
 const COLUMNS = [
   {
@@ -69,6 +69,18 @@ export function SiteFooter() {
         </p>
         <p className="mt-4 text-center text-xs text-muted-foreground">
           Windows desktop · version 1.0.0
+        </p>
+        <p className="mt-2 text-center text-xs text-muted-foreground">
+          Cueboard is a trading name of Steelzz Ltd. Operated by{" "}
+          <a
+            href={STEELZZ}
+            className="underline underline-offset-4 hover:text-foreground"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Steelzz.co.uk
+          </a>
+          . Company number 17404065.
         </p>
       </div>
     </footer>

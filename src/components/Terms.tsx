@@ -44,6 +44,11 @@ const SECTIONS = [
     title: "Acceptance",
     body: "Installing Cueboard, ticking the acceptance box, or using the application means you accept these terms.",
   },
+  {
+    n: "10",
+    title: "Operator",
+    body: "Cueboard is a trading name of Steelzz Ltd, operated by Steelzz.co.uk. Company number 17404065.",
+  },
 ];
 
 export function Terms() {
