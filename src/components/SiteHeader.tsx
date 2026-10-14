@@ -10,6 +10,7 @@ const NAV = [
   { href: "#youtube", label: "YouTube MP3" },
   { href: "#features", label: "Features" },
   { href: "#faq", label: "FAQ" },
+  { href: "#terms", label: "Terms" },
 ];
 
 export function SiteHeader() {

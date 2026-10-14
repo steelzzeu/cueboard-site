@@ -22,6 +22,7 @@ const COLUMNS = [
     title: "Support",
     links: [
       { href: "#faq", label: "FAQ" },
+      { href: "#terms", label: "Terms" },
       { href: DONATE, label: "Donate", external: true },
     ],
   },

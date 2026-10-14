@@ -7,6 +7,7 @@ import { HowItWorks } from "@/components/HowItWorks";
 import { ProductFrame } from "@/components/ProductFrame";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { Terms } from "@/components/Terms";
 import { YoutubeHighlight } from "@/components/YoutubeHighlight";
 
 export function App() {
@@ -42,6 +43,7 @@ export function App() {
           />
         </section>
         <Faq />
+        <Terms />
         <Cta />
       </main>
       <SiteFooter />

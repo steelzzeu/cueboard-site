@@ -1,8 +1,11 @@
 import {
   SiDiscord,
+  SiKick,
   SiObsstudio,
   SiSteam,
+  SiTiktok,
   SiTwitch,
+  SiYoutube,
 } from "@icons-pack/react-simple-icons";
 import { WindowsLogo } from "@phosphor-icons/react";
 import { Marquee } from "@/components/magicui/marquee";
@@ -12,6 +15,9 @@ const LOGOS = [
   { name: "Discord", node: <SiDiscord className="size-5" color="#5865F2" /> },
   { name: "OBS Studio", node: <SiObsstudio className="size-5 text-foreground" color="currentColor" /> },
   { name: "Twitch", node: <SiTwitch className="size-5" color="#9146FF" /> },
+  { name: "Kick", node: <SiKick className="size-5" color="#53FC19" /> },
+  { name: "YouTube", node: <SiYoutube className="size-5" color="#FF0000" /> },
+  { name: "TikTok Studio", node: <SiTiktok className="size-5 text-foreground" color="currentColor" /> },
   { name: "Steam", node: <SiSteam className="size-5 text-foreground" color="currentColor" /> },
 ];
 
@@ -24,11 +30,11 @@ export function Audience() {
       <div className="relative">
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-background to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-background to-transparent" />
-        <Marquee pauseOnHover className="[--duration:32s]">
+        <Marquee pauseOnHover className="[--duration:36s] [--gap:2rem]">
           {LOGOS.map((logo) => (
             <div
               key={logo.name}
-              className="flex items-center gap-2.5 text-sm font-medium text-foreground/80"
+              className="flex shrink-0 items-center gap-2.5 whitespace-nowrap text-sm font-medium text-foreground/80"
             >
               {logo.node}
               {logo.name}

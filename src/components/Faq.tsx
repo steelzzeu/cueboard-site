@@ -30,6 +30,10 @@ const FAQ = [
     q: "Do I need an account?",
     a: "No. There is no login, no cloud sync, and no paid plan on this page.",
   },
+  {
+    q: "What am I agreeing to when I install?",
+    a: "The Windows installer shows the Cueboard terms of use. You must accept them to continue. They cover local files, YouTube conversion responsibility, audio routing, and a no-warranty clause. The same terms are on this page.",
+  },
 ];
 
 export function Faq() {
