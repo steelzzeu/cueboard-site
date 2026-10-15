@@ -6,10 +6,9 @@ export function BrandMark({ className }: { className?: string }) {
       className={className}
       fill="currentColor"
     >
-      <rect x="3" y="10" width="3.2" height="8" rx="1" />
-      <rect x="8.4" y="6" width="3.2" height="12" rx="1" />
-      <rect x="13.8" y="8" width="3.2" height="10" rx="1" />
-      <rect x="19.2" y="4" width="1.8" height="14" rx="0.8" />
+      <rect x="4" y="8" width="4" height="10" rx="1.2" />
+      <rect x="10" y="4" width="4" height="16" rx="1.2" />
+      <rect x="16" y="10" width="4" height="8" rx="1.2" />
     </svg>
   );
 }
