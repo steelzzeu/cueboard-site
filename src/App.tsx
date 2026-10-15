@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 import { Audience } from "@/components/Audience";
 import { Cta } from "@/components/Cta";
+import { DownloadTrust } from "@/components/DownloadTrust";
 import { Faq } from "@/components/Faq";
 import { Features } from "@/components/Features";
 import { Hero } from "@/components/Hero";
@@ -42,6 +44,7 @@ function Landing() {
         />
       </section>
       <Faq />
+      <DownloadTrust />
       <Cta />
     </>
   );
@@ -49,6 +52,20 @@ function Landing() {
 
 export function App() {
   const terms = isTermsRoute();
+
+  useEffect(() => {
+    const scrollToHash = () => {
+      const id = window.location.hash.replace(/^#/, "");
+      if (!id) return;
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    const timer = window.setTimeout(scrollToHash, 50);
+    window.addEventListener("hashchange", scrollToHash);
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("hashchange", scrollToHash);
+    };
+  }, [terms]);
 
   return (
     <div id="top" className="min-h-svh bg-background">

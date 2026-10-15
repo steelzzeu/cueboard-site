@@ -22,7 +22,19 @@ const FAQ: { q: string; a: ReactNode }[] = [
   },
   {
     q: "Do hotkeys work when the window is minimized?",
-    a: "By default, no. Turn on keep-active if you want shortcuts while hidden. Strict mode disables the board whenever it is not visible.",
+    a: "Yes by default. Sounds keep playing and shortcuts stay live while Cueboard is minimised or in the tray. You can switch that off in Settings if you want a quieter rule.",
+  },
+  {
+    q: "Why does Chrome say the download is dangerous?",
+    a: (
+      <>
+        The Windows installer is not code-signed yet. Chrome flags uncommon unsigned .exe files. Cueboard is shipped by Steelzz Ltd, the source is on GitHub, and nothing is uploaded from your PC.{" "}
+        <a className="underline underline-offset-4 hover:text-foreground" href="/#safe-download">
+          Full explanation
+        </a>
+        .
+      </>
+    ),
   },
   {
     q: "Is there a Mac or Linux build?",

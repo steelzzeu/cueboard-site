@@ -1,7 +1,7 @@
 import { WindowsLogo } from "@phosphor-icons/react";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { Button } from "@/components/ui/button";
-import { DONATE, INSTALLER, PORTABLE } from "@/lib/links";
+import { DONATE, INSTALLER, PORTABLE, SAFE_DOWNLOAD } from "@/lib/links";
 
 export function Cta() {
   return (
@@ -36,6 +36,13 @@ export function Cta() {
               </a>
             </Button>
           </div>
+          <p className="mt-5 text-xs text-muted-foreground">
+            If Chrome blocks the file, that is the missing signature.{" "}
+            <a href={SAFE_DOWNLOAD} className="underline underline-offset-4 hover:text-foreground">
+              Read why it is still the Cueboard installer
+            </a>
+            .
+          </p>
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import { BrandMark } from "@/components/BrandMark";
 import { Separator } from "@/components/ui/separator";
-import { DONATE, INSTALLER, PORTABLE, STEELZZ, TERMS } from "@/lib/links";
+import { DONATE, INSTALLER, PORTABLE, SAFE_DOWNLOAD, STEELZZ, TERMS } from "@/lib/links";
 
 const COLUMNS = [
   {
@@ -22,6 +22,7 @@ const COLUMNS = [
     title: "Support",
     links: [
       { href: "/#faq", label: "FAQ" },
+      { href: SAFE_DOWNLOAD, label: "Why Chrome warns" },
       { href: TERMS, label: "Terms" },
       { href: DONATE, label: "Donate", external: true },
     ],

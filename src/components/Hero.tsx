@@ -2,7 +2,7 @@ import { ArrowRight, WindowsLogo } from "@phosphor-icons/react";
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { Button } from "@/components/ui/button";
-import { INSTALLER, PORTABLE } from "@/lib/links";
+import { INSTALLER, PORTABLE, SAFE_DOWNLOAD } from "@/lib/links";
 
 export function Hero() {
   return (
@@ -43,6 +43,12 @@ export function Hero() {
         </div>
         <p className="mt-4 text-sm text-muted-foreground">
           NSIS installer · no credit card · files stay local
+        </p>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Chrome may warn. The setup is unsigned, not hidden.{" "}
+          <a href={SAFE_DOWNLOAD} className="underline underline-offset-4 hover:text-foreground">
+            Why that happens
+          </a>
         </p>
       </div>
     </section>

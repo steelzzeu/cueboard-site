@@ -32,7 +32,7 @@ const FEATURES = [
   {
     icon: CornersIn,
     title: "Minimize modes",
-    body: "Default: shortcuts pause when hidden. Keep-active or strict if you want a tighter rule.",
+    body: "Default: the board stays live when hidden. You can disable shortcuts or use strict mode in Settings.",
   },
   {
     icon: Tray,
